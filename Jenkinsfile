@@ -4,7 +4,7 @@ pipeline{
         stage("soner quality chek"){
             agent {
                 docker {
-                    iamge 'openjdk:11'
+                    image 'openjdk:11'
                 }
             }
             steps{
