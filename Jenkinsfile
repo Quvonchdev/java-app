@@ -24,7 +24,7 @@ pipeline{
         stage("docker build & docker push"){
             steps{
                 script{
-                    withCredentials([string(credentialsId: 'docker_pass ', variable: 'docker_password')]) {
+                    withCredentials([string(credentialsId: 'docker_pass', variable: 'docker_password')]) {
                         sh '''
                             docker build -t localhost:4000/springapp:${VERSION} .
                             docker lohin -u quvonchdev -p $docker_password localhost:4000
