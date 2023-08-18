@@ -8,8 +8,9 @@ group 'com.example'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
-apply plugin: 'org.sonarqube'
-
+plugins {
+  id "org.sonarqube" version "4.3.0.3225"
+}
 repositories {
     mavenCentral()
 }
