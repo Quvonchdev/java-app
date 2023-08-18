@@ -2,7 +2,7 @@ pipeline{
     agent any
     stages{
         stage("soner quality chek"){
-            agent{
+            agent {
                 docker {
                     iamge 'openjdk:11'
                 }
